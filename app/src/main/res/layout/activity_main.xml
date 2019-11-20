@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#165266"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#B71C1C"
+        android:text="Select location"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinlocation"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Check In Date"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#B71C1C"
+        android:text="Select room type"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/spinroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Check In Date"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/simpledatepicker1"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#404"
+        android:layout_height="wrap_content"
+        android:text="Check In date" />
+
+    <Button
+        android:id="@+id/simpledatepicker2"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#404"
+        android:layout_height="wrap_content"
+        android:text="check out date" />
+
+    <LinearLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/tvadult"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_weight="1"
+            android:hint="Adults"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#B71C1C"
+            android:textSize="25dp"></EditText>
+
+        <EditText
+            android:id="@+id/tvkids"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:hint="Child"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#B71C1C"
+            android:textSize="25dp"></EditText>
+
+        <EditText
+            android:id="@+id/tvroom"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:hint="Room"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#B71C1C"
+            android:textSize="25dp"></EditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btncalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tverr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFAA60"
+        android:text=" Customer details"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvindate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvoutdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvdayofstay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvroomno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/totalsuite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvtotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/tvVat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+
+</LinearLayout>
